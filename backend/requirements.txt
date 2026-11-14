@@ -1,0 +1,16 @@
+fastapi
+uvicorn[standard]
+langgraph
+langchain-groq
+langchain-community
+pydantic
+python-dotenv
+transformers
+torch
+sentence-transformers
+numpy
+scipy
+matplotlib
+seaborn
+datasets
+httpx

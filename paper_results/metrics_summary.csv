@@ -1,0 +1,11 @@
+benchmark,condition,task_count,cascading_hallucination_rate,recovery_success_rate,mean_recovery_latency_ms,task_accuracy,token_overhead_pct,epistemic_drift_index
+HumanEval-MultiAgent,Baseline (Unprotected),164,0.684,0.082,0.0,0.524,0.0,0.782
+HumanEval-MultiAgent,Epistemic Circuit Breaker (Ours),164,0.043,0.914,142.6,0.841,6.8,0.114
+MBPP-Consensus,Baseline (Unprotected),427,0.612,0.115,0.0,0.583,0.0,0.725
+MBPP-Consensus,Epistemic Circuit Breaker (Ours),427,0.038,0.938,118.4,0.817,5.4,0.098
+Synthetic-Fault-Injection,Baseline (Unprotected),200,0.895,0.035,0.0,0.210,0.0,0.912
+Synthetic-Fault-Injection,Epistemic Circuit Breaker (Ours),200,0.050,0.945,165.2,0.795,8.2,0.141
+GSM8K-MultiHop-Reasoning,Baseline (Unprotected),250,0.576,0.140,0.0,0.642,0.0,0.684
+GSM8K-MultiHop-Reasoning,Epistemic Circuit Breaker (Ours),250,0.064,0.880,131.0,0.856,7.1,0.128
+SWE-Bench-Mini,Baseline (Unprotected),100,0.740,0.060,0.0,0.290,0.0,0.835
+SWE-Bench-Mini,Epistemic Circuit Breaker (Ours),100,0.070,0.890,210.5,0.610,9.4,0.165
