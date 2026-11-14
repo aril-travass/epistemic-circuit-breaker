@@ -111,7 +111,12 @@ export default function App() {
     try {
       const controller = new AbortController();
       const timeoutId = setTimeout(() => controller.abort(), 2000);
-      const res = await fetch('http://localhost:8000/api/health', { signal: controller.signal });
+      let res;
+      try {
+        res = await fetch('/api/health', { signal: controller.signal });
+      } catch {
+        res = await fetch('http://localhost:8000/api/health', { signal: controller.signal });
+      }
       clearTimeout(timeoutId);
 
       const elapsed = Math.round(performance.now() - start);
