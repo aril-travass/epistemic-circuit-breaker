@@ -13,7 +13,7 @@ class StepLog(TypedDict):
     metadata: Dict[str, Any]
 
 
-class AgentWorkflowState(TypedDict):
+class AgentWorkflowState(TypedDict, total=False):
     """
     Shared LangGraph state for the multi-agent reasoning and code generation pipeline.
     Tracks dialogue, generated artifacts, verification steps, and epistemic safety metrics.
@@ -29,13 +29,25 @@ class AgentWorkflowState(TypedDict):
     circuit_breaker_enabled: bool
     drift_history: List[float]
     rollback_count: int
+    safe_checkpoints: List[Dict[str, Any]]
+    corrective_constraints: List[str]
+    active_claims: List[Dict[str, Any]]
+    last_drift_result: Optional[Dict[str, Any]]
+    circuit_state: str
+    retry_count_planner: int
+    retry_count_coder: int
+    max_retries: int
+    drift_threshold: float
 
 
 def create_initial_state(
     task_prompt: str,
     constraints: Optional[List[str]] = None,
     fault_injection_enabled: bool = False,
-    circuit_breaker_enabled: bool = False,
+    circuit_breaker_enabled: bool = True,
+    drift_threshold: float = 0.50,
+    max_retries: int = 2,
+    **kwargs: Any,
 ) -> AgentWorkflowState:
     """Helper to initialize a clean AgentWorkflowState dictionary."""
     return {
@@ -50,6 +62,15 @@ def create_initial_state(
         "circuit_breaker_enabled": circuit_breaker_enabled,
         "drift_history": [],
         "rollback_count": 0,
+        "safe_checkpoints": [],
+        "corrective_constraints": [],
+        "active_claims": [],
+        "last_drift_result": None,
+        "circuit_state": "CLOSED",
+        "retry_count_planner": 0,
+        "retry_count_coder": 0,
+        "max_retries": max_retries,
+        "drift_threshold": drift_threshold,
     }
 
 
