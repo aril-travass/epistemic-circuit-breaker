@@ -714,7 +714,7 @@ export default function App() {
                   Causal DAG Rollback Engine
                 </div>
                 <p className="text-[11px] leading-relaxed">
-                  State snapshots record immutable message DAG hashes and tool mutation logs. Upon a trip event, all downstream turns post-dating $T_{safe}$ are pruned.
+                  State snapshots record immutable message DAG hashes and tool mutation logs. Upon a trip event, all downstream turns post-dating T_safe are pruned.
                 </p>
               </div>
             </div>
