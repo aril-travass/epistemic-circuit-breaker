@@ -2,9 +2,11 @@ import asyncio
 import logging
 import os
 import re
+import socket
 import time
 import uuid
 from typing import Any, Callable, Dict, List, Optional, Tuple
+from urllib.parse import urlparse
 
 from dotenv import load_dotenv
 from langchain_core.messages import AIMessage, BaseMessage, HumanMessage, SystemMessage
@@ -64,6 +66,26 @@ def _estimate_token_count(text: str) -> int:
     return max(1, int(words * 1.33))
 
 
+_ollama_checked = False
+_ollama_available = False
+
+
+def _check_ollama(base_url: str) -> bool:
+    global _ollama_checked, _ollama_available
+    if _ollama_checked:
+        return _ollama_available
+    try:
+        parsed = urlparse(base_url)
+        host = parsed.hostname or "127.0.0.1"
+        port = parsed.port or 11434
+        with socket.create_connection((host, port), timeout=0.2):
+            _ollama_available = True
+    except OSError:
+        _ollama_available = False
+    _ollama_checked = True
+    return _ollama_available
+
+
 def call_llm(
     messages: List[BaseMessage],
     system_prompt: str,
@@ -99,22 +121,23 @@ def call_llm(
             logger.warning("[Groq Fallback] Groq call failed or rate-limited (%s). Attempting local Ollama...", e)
 
     # Tier 2: Local Ollama (qwen2.5-coder:3b)
-    try:
-        from langchain_ollama import ChatOllama
+    ollama_base_url = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
+    if _check_ollama(ollama_base_url):
+        try:
+            from langchain_ollama import ChatOllama
 
-        ollama_base_url = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
-        ollama_llm = ChatOllama(
-            model="qwen2.5-coder:3b",
-            base_url=ollama_base_url,
-            temperature=0.2,
-        )
-        response = ollama_llm.invoke(all_messages)
-        text = response.content if isinstance(response, AIMessage) else str(response)
-        tokens = _estimate_token_count(text)
-        logger.info("Successfully received inference from Ollama for %s", purpose)
-        return text, "ollama:qwen2.5-coder:3b", tokens
-    except Exception as e:
-        logger.debug("[Ollama Fallback] Local Ollama not reachable (%s). Using heuristic synthesis.", e)
+            ollama_llm = ChatOllama(
+                model="qwen2.5-coder:3b",
+                base_url=ollama_base_url,
+                temperature=0.2,
+            )
+            response = ollama_llm.invoke(all_messages)
+            text = response.content if isinstance(response, AIMessage) else str(response)
+            tokens = _estimate_token_count(text)
+            logger.info("Successfully received inference from Ollama for %s", purpose)
+            return text, "ollama:qwen2.5-coder:3b", tokens
+        except Exception as e:
+            logger.debug("[Ollama Fallback] Local Ollama not reachable (%s). Using heuristic synthesis.", e)
 
     # Tier 3: Deterministic Heuristic Synthesis
     text = fallback_heuristic or "Execution completed."

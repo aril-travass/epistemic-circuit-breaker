@@ -1,0 +1,151 @@
+benchmark,task_id,architecture,condition,fault_injected,pass_at_1,cascade_intercepted,false_consensus,drift_score,tokens_consumed,latency_ms,rollback_count,sandbox_status
+HumanEval,HumanEval/0,single_agent,clean,False,1,0,0,0.144,362,123.6,0,PASSED
+HumanEval,HumanEval/1,single_agent,clean,False,1,0,0,0.135,402,228.0,0,PASSED
+HumanEval,HumanEval/2,single_agent,clean,False,1,0,0,0.044,566,96.7,0,PASSED
+HumanEval,HumanEval/3,single_agent,clean,False,1,0,0,0.044,658,114.6,0,PASSED
+HumanEval,HumanEval/4,single_agent,clean,False,0,0,0,0.099,629,153.7,0,TypeError: mean_absolute_deviation() takes 0 positional arguments but 1 was given
+HumanEval,HumanEval/5,single_agent,clean,False,1,0,0,0.146,353,113.0,0,PASSED
+HumanEval,HumanEval/6,single_agent,clean,False,1,0,0,0.062,492,241.3,0,PASSED
+HumanEval,HumanEval/7,single_agent,clean,False,1,0,0,0.093,397,141.7,0,PASSED
+HumanEval,HumanEval/8,single_agent,clean,False,1,0,0,0.153,485,205.2,0,PASSED
+HumanEval,HumanEval/9,single_agent,clean,False,1,0,0,0.051,543,134.9,0,PASSED
+HumanEval,HumanEval/10,single_agent,clean,False,1,0,0,0.121,535,198.0,0,PASSED
+HumanEval,HumanEval/11,single_agent,clean,False,1,0,0,0.148,466,241.8,0,PASSED
+HumanEval,HumanEval/12,single_agent,clean,False,0,0,0,0.093,401,158.0,0,TypeError: longest() takes 0 positional arguments but 1 was given
+HumanEval,HumanEval/13,single_agent,clean,False,0,0,0,0.092,433,117.0,0,TypeError: greatest_common_divisor() takes 0 positional arguments but 2 were given
+HumanEval,HumanEval/14,single_agent,clean,False,1,0,0,0.125,386,110.6,0,PASSED
+HumanEval,HumanEval/15,single_agent,clean,False,0,0,0,0.105,433,175.4,0,TypeError: string_sequence() takes 0 positional arguments but 1 was given
+HumanEval,HumanEval/16,single_agent,clean,False,0,0,0,0.071,635,140.6,0,TypeError: count_distinct_characters() takes 0 positional arguments but 1 was given
+HumanEval,HumanEval/17,single_agent,clean,False,0,0,0,0.072,378,113.1,0,TypeError: parse_music() takes 0 positional arguments but 1 was given
+HumanEval,HumanEval/18,single_agent,clean,False,1,0,0,0.049,487,246.1,0,PASSED
+HumanEval,HumanEval/19,single_agent,clean,False,1,0,0,0.07,511,169.1,0,PASSED
+HumanEval,HumanEval/20,single_agent,clean,False,0,0,0,0.104,679,124.0,0,TypeError: find_closest_elements() takes 0 positional arguments but 1 was given
+HumanEval,HumanEval/21,single_agent,clean,False,1,0,0,0.115,637,205.0,0,PASSED
+HumanEval,HumanEval/22,single_agent,clean,False,0,0,0,0.096,648,118.9,0,NameError: name 'Any' is not defined
+HumanEval,HumanEval/23,single_agent,clean,False,0,0,0,0.109,610,204.8,0,TypeError: strlen() takes 0 positional arguments but 1 was given
+HumanEval,HumanEval/24,single_agent,clean,False,0,0,0,0.128,428,211.4,0,TypeError: largest_divisor() takes 0 positional arguments but 1 was given
+HumanEval,HumanEval/25,single_agent,clean,False,1,0,0,0.094,382,181.5,0,PASSED
+HumanEval,HumanEval/26,single_agent,clean,False,1,0,0,0.176,478,228.1,0,PASSED
+HumanEval,HumanEval/27,single_agent,clean,False,1,0,0,0.135,408,170.0,0,PASSED
+HumanEval,HumanEval/28,single_agent,clean,False,1,0,0,0.088,678,131.0,0,PASSED
+HumanEval,HumanEval/29,single_agent,clean,False,0,0,0,0.174,351,225.0,0,AssertionError: 
+Synthetic-Faults,FaultInjected/01,single_agent,fault_injected,True,1,0,0,0.832,606,171.0,0,PASSED
+Synthetic-Faults,FaultInjected/02,single_agent,fault_injected,True,1,0,0,0.74,670,192.6,0,PASSED
+Synthetic-Faults,FaultInjected/03,single_agent,fault_injected,True,0,0,0,0.755,428,109.8,0,TypeError: truncate_number() takes 0 positional arguments but 1 was given
+Synthetic-Faults,FaultInjected/04,single_agent,fault_injected,True,0,0,0,0.864,621,179.9,0,TypeError: below_zero() takes 0 positional arguments but 1 was given
+Synthetic-Faults,FaultInjected/05,single_agent,fault_injected,True,0,0,0,0.866,407,224.5,0,TypeError: mean_absolute_deviation() takes 0 positional arguments but 1 was given
+Synthetic-Faults,FaultInjected/06,single_agent,fault_injected,True,0,0,0,0.728,507,123.8,0,TypeError: intersperse() takes 0 positional arguments but 2 were given
+Synthetic-Faults,FaultInjected/07,single_agent,fault_injected,True,0,0,0,0.697,390,161.2,0,TypeError: parse_nested_parens() takes 0 positional arguments but 1 was given
+Synthetic-Faults,FaultInjected/08,single_agent,fault_injected,True,1,0,0,0.833,622,110.9,0,PASSED
+Synthetic-Faults,FaultInjected/09,single_agent,fault_injected,True,0,0,0,0.713,631,171.7,0,TypeError: sum_product() takes 0 positional arguments but 1 was given
+Synthetic-Faults,FaultInjected/10,single_agent,fault_injected,True,0,0,0,0.866,458,205.9,0,TypeError: rolling_max() takes 0 positional arguments but 1 was given
+Synthetic-Faults,FaultInjected/11,single_agent,fault_injected,True,0,0,0,0.76,509,191.7,0,TypeError: make_palindrome() takes 0 positional arguments but 1 was given
+Synthetic-Faults,FaultInjected/12,single_agent,fault_injected,True,1,0,0,0.77,614,131.2,0,PASSED
+Synthetic-Faults,FaultInjected/13,single_agent,fault_injected,True,1,0,0,0.798,360,124.9,0,PASSED
+Synthetic-Faults,FaultInjected/14,single_agent,fault_injected,True,1,0,0,0.822,386,94.1,0,PASSED
+Synthetic-Faults,FaultInjected/15,single_agent,fault_injected,True,1,0,0,0.852,366,98.1,0,PASSED
+Synthetic-Faults,FaultInjected/16,single_agent,fault_injected,True,1,0,0,0.723,598,112.7,0,PASSED
+Synthetic-Faults,FaultInjected/17,single_agent,fault_injected,True,0,0,0,0.795,642,125.3,0,TypeError: count_distinct_characters() takes 0 positional arguments but 1 was given
+Synthetic-Faults,FaultInjected/18,single_agent,fault_injected,True,0,0,0,0.718,558,100.1,0,TypeError: parse_music() takes 0 positional arguments but 1 was given
+Synthetic-Faults,FaultInjected/19,single_agent,fault_injected,True,0,0,0,0.762,566,219.7,0,TypeError: how_many_times() takes 0 positional arguments but 2 were given
+Synthetic-Faults,FaultInjected/20,single_agent,fault_injected,True,1,0,0,0.7,680,155.4,0,PASSED
+HumanEval,HumanEval/0,unprotected_multi_agent,clean,False,1,0,0,0.179,1825,208.4,0,PASSED
+HumanEval,HumanEval/1,unprotected_multi_agent,clean,False,1,0,0,0.168,1904,238.8,0,PASSED
+HumanEval,HumanEval/2,unprotected_multi_agent,clean,False,1,0,0,0.065,2232,99.2,0,PASSED
+HumanEval,HumanEval/3,unprotected_multi_agent,clean,False,1,0,0,0.15,1827,200.4,0,PASSED
+HumanEval,HumanEval/4,unprotected_multi_agent,clean,False,1,0,0,0.095,2229,180.8,0,PASSED
+HumanEval,HumanEval/5,unprotected_multi_agent,clean,False,0,0,0,0.181,1806,113.6,0,TypeError: intersperse() takes 0 positional arguments but 2 were given
+HumanEval,HumanEval/6,unprotected_multi_agent,clean,False,1,0,0,0.085,2084,240.2,0,PASSED
+HumanEval,HumanEval/7,unprotected_multi_agent,clean,False,1,0,0,0.121,1894,145.7,0,PASSED
+HumanEval,HumanEval/8,unprotected_multi_agent,clean,False,1,0,0,0.189,2070,203.9,0,PASSED
+HumanEval,HumanEval/9,unprotected_multi_agent,clean,False,1,0,0,0.073,2187,141.6,0,PASSED
+HumanEval,HumanEval/10,unprotected_multi_agent,clean,False,1,0,0,0.152,2170,199.8,0,PASSED
+HumanEval,HumanEval/11,unprotected_multi_agent,clean,False,1,0,0,0.184,2033,242.7,0,PASSED
+HumanEval,HumanEval/12,unprotected_multi_agent,clean,False,0,0,0,0.121,1903,162.8,0,TypeError: longest() takes 0 positional arguments but 1 was given
+HumanEval,HumanEval/13,unprotected_multi_agent,clean,False,0,0,0,0.119,1966,133.5,0,TypeError: greatest_common_divisor() takes 0 positional arguments but 2 were given
+HumanEval,HumanEval/14,unprotected_multi_agent,clean,False,1,0,0,0.157,1873,151.6,0,PASSED
+HumanEval,HumanEval/15,unprotected_multi_agent,clean,False,1,0,0,0.134,1967,154.4,0,PASSED
+HumanEval,HumanEval/16,unprotected_multi_agent,clean,False,0,0,0,0.095,2370,134.0,0,TypeError: count_distinct_characters() takes 0 positional arguments but 1 was given
+HumanEval,HumanEval/17,unprotected_multi_agent,clean,False,1,0,0,0.097,1857,125.6,0,PASSED
+HumanEval,HumanEval/18,unprotected_multi_agent,clean,False,1,0,0,0.071,2074,363.1,0,PASSED
+HumanEval,HumanEval/19,unprotected_multi_agent,clean,False,1,0,0,0.094,2122,193.6,0,PASSED
+HumanEval,HumanEval/20,unprotected_multi_agent,clean,False,0,0,0,0.083,2269,127.3,0,TypeError: find_closest_elements() takes 0 positional arguments but 1 was given
+HumanEval,HumanEval/21,unprotected_multi_agent,clean,False,1,0,0,0.102,2351,218.9,0,PASSED
+HumanEval,HumanEval/22,unprotected_multi_agent,clean,False,0,0,0,0.118,2208,243.0,0,TypeError: filter_integers() takes 0 positional arguments but 1 was given
+HumanEval,HumanEval/23,unprotected_multi_agent,clean,False,1,0,0,0.075,2305,91.2,0,PASSED
+HumanEval,HumanEval/24,unprotected_multi_agent,clean,False,1,0,0,0.187,1963,152.4,0,PASSED
+HumanEval,HumanEval/25,unprotected_multi_agent,clean,False,1,0,0,0.155,2190,164.4,0,PASSED
+HumanEval,HumanEval/26,unprotected_multi_agent,clean,False,1,0,0,0.198,2366,87.0,0,PASSED
+HumanEval,HumanEval/27,unprotected_multi_agent,clean,False,1,0,0,0.18,2349,209.4,0,PASSED
+HumanEval,HumanEval/28,unprotected_multi_agent,clean,False,1,0,0,0.13,2100,158.5,0,PASSED
+HumanEval,HumanEval/29,unprotected_multi_agent,clean,False,0,0,0,0.216,2069,204.9,0,TypeError: filter_by_prefix() takes 0 positional arguments but 2 were given
+Synthetic-Faults,FaultInjected/01,unprotected_multi_agent,fault_injected,True,0,0,1,0.923,3319,233.0,0,ModuleNotFoundError: No module named 'fast_struct_utils'
+Synthetic-Faults,FaultInjected/02,unprotected_multi_agent,fault_injected,True,0,0,1,0.91,3105,174.1,0,ModuleNotFoundError: No module named 'fast_struct_utils'
+Synthetic-Faults,FaultInjected/03,unprotected_multi_agent,fault_injected,True,0,0,1,0.779,3003,214.1,0,ModuleNotFoundError: No module named 'fast_struct_utils'
+Synthetic-Faults,FaultInjected/04,unprotected_multi_agent,fault_injected,True,0,0,1,0.931,3352,240.0,0,ModuleNotFoundError: No module named 'fast_struct_utils'
+Synthetic-Faults,FaultInjected/05,unprotected_multi_agent,fault_injected,True,0,0,1,0.864,2800,211.7,0,ModuleNotFoundError: No module named 'fast_struct_utils'
+Synthetic-Faults,FaultInjected/06,unprotected_multi_agent,fault_injected,True,0,0,1,0.927,2914,285.4,0,ModuleNotFoundError: No module named 'fast_struct_utils'
+Synthetic-Faults,FaultInjected/07,unprotected_multi_agent,fault_injected,True,0,0,1,0.795,3114,138.8,0,ModuleNotFoundError: No module named 'fast_struct_utils'
+Synthetic-Faults,FaultInjected/08,unprotected_multi_agent,fault_injected,True,0,0,1,0.93,3380,122.4,0,ModuleNotFoundError: No module named 'fast_struct_utils'
+Synthetic-Faults,FaultInjected/09,unprotected_multi_agent,fault_injected,True,0,0,1,0.905,3297,248.7,0,ModuleNotFoundError: No module named 'fast_struct_utils'
+Synthetic-Faults,FaultInjected/10,unprotected_multi_agent,fault_injected,True,0,0,1,0.896,3345,111.5,0,ModuleNotFoundError: No module named 'fast_struct_utils'
+Synthetic-Faults,FaultInjected/11,unprotected_multi_agent,fault_injected,True,0,0,1,0.93,3286,120.1,0,ModuleNotFoundError: No module named 'fast_struct_utils'
+Synthetic-Faults,FaultInjected/12,unprotected_multi_agent,fault_injected,True,0,0,1,0.916,3340,159.6,0,ModuleNotFoundError: No module named 'fast_struct_utils'
+Synthetic-Faults,FaultInjected/13,unprotected_multi_agent,fault_injected,True,0,0,1,0.926,3016,211.6,0,ModuleNotFoundError: No module named 'fast_struct_utils'
+Synthetic-Faults,FaultInjected/14,unprotected_multi_agent,fault_injected,True,0,0,1,0.788,3506,137.6,0,ModuleNotFoundError: No module named 'fast_struct_utils'
+Synthetic-Faults,FaultInjected/15,unprotected_multi_agent,fault_injected,True,0,0,1,0.873,3487,159.7,0,ModuleNotFoundError: No module named 'fast_struct_utils'
+Synthetic-Faults,FaultInjected/16,unprotected_multi_agent,fault_injected,True,0,0,1,0.836,3329,129.7,0,ModuleNotFoundError: No module named 'fast_struct_utils'
+Synthetic-Faults,FaultInjected/17,unprotected_multi_agent,fault_injected,True,0,0,1,0.814,2865,182.5,0,ModuleNotFoundError: No module named 'fast_struct_utils'
+Synthetic-Faults,FaultInjected/18,unprotected_multi_agent,fault_injected,True,0,0,1,0.862,3035,94.4,0,ModuleNotFoundError: No module named 'fast_struct_utils'
+Synthetic-Faults,FaultInjected/19,unprotected_multi_agent,fault_injected,True,0,0,1,0.87,3524,129.4,0,ModuleNotFoundError: No module named 'fast_struct_utils'
+Synthetic-Faults,FaultInjected/20,unprotected_multi_agent,fault_injected,True,0,0,1,0.913,2832,114.0,0,ModuleNotFoundError: No module named 'fast_struct_utils'
+HumanEval,HumanEval/0,epistemic_circuit_breaker,clean,False,1,0,0,0.129,1925,127.7,0,PASSED
+HumanEval,HumanEval/1,epistemic_circuit_breaker,clean,False,1,0,0,0.121,2004,239.9,0,PASSED
+HumanEval,HumanEval/2,epistemic_circuit_breaker,clean,False,1,0,0,0.044,2332,132.7,0,PASSED
+HumanEval,HumanEval/3,epistemic_circuit_breaker,clean,False,1,0,0,0.107,1927,222.7,0,PASSED
+HumanEval,HumanEval/4,epistemic_circuit_breaker,clean,False,1,0,0,0.066,2329,207.9,0,PASSED
+HumanEval,HumanEval/5,epistemic_circuit_breaker,clean,False,1,0,0,0.131,1906,148.1,0,PASSED
+HumanEval,HumanEval/6,epistemic_circuit_breaker,clean,False,1,0,0,0.059,2184,246.9,0,PASSED
+HumanEval,HumanEval/7,epistemic_circuit_breaker,clean,False,1,0,0,0.086,1994,147.0,0,PASSED
+HumanEval,HumanEval/8,epistemic_circuit_breaker,clean,False,1,0,0,0.137,2170,207.7,0,PASSED
+HumanEval,HumanEval/9,epistemic_circuit_breaker,clean,False,1,0,0,0.049,2287,133.0,0,PASSED
+HumanEval,HumanEval/10,epistemic_circuit_breaker,clean,False,1,0,0,0.109,2270,203.3,0,PASSED
+HumanEval,HumanEval/11,epistemic_circuit_breaker,clean,False,1,0,0,0.133,2133,242.6,0,PASSED
+HumanEval,HumanEval/12,epistemic_circuit_breaker,clean,False,0,0,0,0.086,2003,163.3,0,TypeError: longest() takes 0 positional arguments but 1 was given
+HumanEval,HumanEval/13,epistemic_circuit_breaker,clean,False,1,0,0,0.084,2066,119.0,0,PASSED
+HumanEval,HumanEval/14,epistemic_circuit_breaker,clean,False,1,0,0,0.113,1973,111.5,0,PASSED
+HumanEval,HumanEval/15,epistemic_circuit_breaker,clean,False,1,0,0,0.095,2067,128.0,0,PASSED
+HumanEval,HumanEval/16,epistemic_circuit_breaker,clean,False,0,0,0,0.122,2124,219.4,0,TypeError: count_distinct_characters() takes 0 positional arguments but 1 was given
+HumanEval,HumanEval/17,epistemic_circuit_breaker,clean,False,1,0,0,0.139,2134,219.5,0,PASSED
+HumanEval,HumanEval/18,epistemic_circuit_breaker,clean,False,1,0,0,0.065,1967,256.9,0,PASSED
+HumanEval,HumanEval/19,epistemic_circuit_breaker,clean,False,0,0,0,0.066,2222,191.1,0,TypeError: sort_numbers() takes 0 positional arguments but 1 was given
+HumanEval,HumanEval/20,epistemic_circuit_breaker,clean,False,0,0,0,0.057,2369,135.6,0,TypeError: find_closest_elements() takes 0 positional arguments but 1 was given
+HumanEval,HumanEval/21,epistemic_circuit_breaker,clean,False,1,0,0,0.13,2169,245.0,0,PASSED
+HumanEval,HumanEval/22,epistemic_circuit_breaker,clean,False,0,0,0,0.066,2270,241.4,0,NameError: name 'Any' is not defined
+HumanEval,HumanEval/23,epistemic_circuit_breaker,clean,False,1,0,0,0.131,1993,346.6,0,PASSED
+HumanEval,HumanEval/24,epistemic_circuit_breaker,clean,False,1,0,0,0.135,2063,254.1,0,PASSED
+HumanEval,HumanEval/25,epistemic_circuit_breaker,clean,False,1,0,0,0.112,2290,232.7,0,PASSED
+HumanEval,HumanEval/26,epistemic_circuit_breaker,clean,False,1,0,0,0.122,1911,112.9,0,PASSED
+HumanEval,HumanEval/27,epistemic_circuit_breaker,clean,False,0,0,0,0.132,2173,135.7,0,TypeError: flip_case() takes 0 positional arguments but 1 was given
+HumanEval,HumanEval/28,epistemic_circuit_breaker,clean,False,1,0,0,0.094,2061,248.1,0,PASSED
+HumanEval,HumanEval/29,epistemic_circuit_breaker,clean,False,0,0,0,0.157,2169,204.0,0,TypeError: filter_by_prefix() takes 0 positional arguments but 2 were given
+Synthetic-Faults,FaultInjected/01,epistemic_circuit_breaker,fault_injected,True,1,1,0,0.254,1704,134.3,1,PASSED
+Synthetic-Faults,FaultInjected/02,epistemic_circuit_breaker,fault_injected,True,1,1,0,0.12,1961,153.1,1,PASSED
+Synthetic-Faults,FaultInjected/03,epistemic_circuit_breaker,fault_injected,True,1,1,0,0.236,2138,166.8,1,PASSED
+Synthetic-Faults,FaultInjected/04,epistemic_circuit_breaker,fault_injected,True,1,1,0,0.178,1815,107.0,1,PASSED
+Synthetic-Faults,FaultInjected/05,epistemic_circuit_breaker,fault_injected,True,1,1,0,0.241,2075,129.9,1,PASSED
+Synthetic-Faults,FaultInjected/06,epistemic_circuit_breaker,fault_injected,True,1,1,0,0.269,1940,103.3,1,PASSED
+Synthetic-Faults,FaultInjected/07,epistemic_circuit_breaker,fault_injected,True,1,1,0,0.276,1685,174.9,1,PASSED
+Synthetic-Faults,FaultInjected/08,epistemic_circuit_breaker,fault_injected,True,1,1,0,0.175,1987,175.8,1,PASSED
+Synthetic-Faults,FaultInjected/09,epistemic_circuit_breaker,fault_injected,True,1,1,0,0.201,2096,242.4,1,PASSED
+Synthetic-Faults,FaultInjected/10,epistemic_circuit_breaker,fault_injected,True,0,1,0,0.226,2036,120.3,1,TypeError: rolling_max() takes 0 positional arguments but 1 was given
+Synthetic-Faults,FaultInjected/11,epistemic_circuit_breaker,fault_injected,True,1,1,0,0.21,1993,157.4,1,PASSED
+Synthetic-Faults,FaultInjected/12,epistemic_circuit_breaker,fault_injected,True,1,1,0,0.13,1711,100.3,1,PASSED
+Synthetic-Faults,FaultInjected/13,epistemic_circuit_breaker,fault_injected,True,1,1,0,0.126,1933,120.4,1,PASSED
+Synthetic-Faults,FaultInjected/14,epistemic_circuit_breaker,fault_injected,True,1,1,0,0.092,1973,94.5,1,PASSED
+Synthetic-Faults,FaultInjected/15,epistemic_circuit_breaker,fault_injected,True,1,1,0,0.094,1819,120.6,1,PASSED
+Synthetic-Faults,FaultInjected/16,epistemic_circuit_breaker,fault_injected,True,1,1,0,0.188,1759,199.6,1,PASSED
+Synthetic-Faults,FaultInjected/17,epistemic_circuit_breaker,fault_injected,True,0,1,0,0.175,1945,209.7,1,TypeError: count_distinct_characters() takes 0 positional arguments but 1 was given
+Synthetic-Faults,FaultInjected/18,epistemic_circuit_breaker,fault_injected,True,1,1,0,0.099,1747,195.0,1,PASSED
+Synthetic-Faults,FaultInjected/19,epistemic_circuit_breaker,fault_injected,True,1,1,0,0.173,1860,206.2,1,PASSED
+Synthetic-Faults,FaultInjected/20,epistemic_circuit_breaker,fault_injected,True,1,1,0,0.1,1980,151.5,1,PASSED
